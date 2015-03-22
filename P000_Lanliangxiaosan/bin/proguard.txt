@@ -1,0 +1,16 @@
+# view res/layout/mm_title.xml #generated:10
+# view res/layout/mm_title.xml #generated:28
+-keep class com.tencent.mm.sdk.uikit.MMImageButton { <init>(...); }
+
+# view AndroidManifest.xml #generated:34
+-keep class com.xiaosan.GetFromWXActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:20
+-keep class com.xiaosan.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:38
+-keep class com.xiaosan.ShowFromWXActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:30
+-keep class com.xiaosan.wxapi.WXEntryActivity { <init>(...); }
+

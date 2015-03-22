@@ -1,0 +1,162 @@
+com.tencent.mm.sdk.channel.MMessage -> com.a.a.a.a.a:
+    java.lang.String extInfo -> a
+    java.lang.String filePath -> b
+    byte[] fileData -> c
+    void send(android.content.Context,java.lang.String,java.lang.String,java.lang.String) -> a
+    java.lang.String getMessageDigest(byte[]) -> a
+    byte[] intToByteArrayLH(int) -> a
+    void serialize(android.os.Bundle) -> a
+    void unserialize(android.os.Bundle) -> b
+    int type() -> a
+    boolean checkArgs() -> b
+    android.os.Bundle toBundle(com.tencent.mm.sdk.openapi.WXMediaMessage) -> a
+    com.tencent.mm.sdk.openapi.WXMediaMessage fromBundle(android.os.Bundle) -> c
+    android.graphics.Bitmap extractThumbNail(java.lang.String,int,int,boolean) -> a
+    android.app.AlertDialog showAlert(android.content.Context,java.lang.String,android.view.View,java.lang.String,java.lang.String,android.content.DialogInterface$OnClickListener,android.content.DialogInterface$OnClickListener) -> a
+    byte[] a(java.lang.String,java.lang.String) -> a
+com.tencent.mm.sdk.channel.MMessageAct -> com.a.a.a.a.b:
+    java.lang.String text -> a
+    boolean send(android.content.Context,java.lang.String,java.lang.String,java.lang.String,android.os.Bundle) -> a
+    boolean sendToWx(android.content.Context,java.lang.String,android.os.Bundle) -> a
+    void serialize(android.os.Bundle) -> a
+    void unserialize(android.os.Bundle) -> b
+    int type() -> a
+    boolean checkArgs() -> b
+com.tencent.mm.sdk.openapi.BaseReq -> com.a.a.a.b.a:
+    java.lang.String transaction -> a
+    int getType() -> a
+    void toBundle(android.os.Bundle) -> a
+    void fromBundle(android.os.Bundle) -> b
+    boolean checkArgs() -> b
+com.tencent.mm.sdk.openapi.BaseResp -> com.a.a.a.b.b:
+    java.lang.String transaction -> a
+    void toBundle(android.os.Bundle) -> a
+    boolean checkArgs() -> a
+com.tencent.mm.sdk.openapi.GetMessageFromWX$Req -> com.a.a.a.b.c:
+    int getType() -> a
+    void toBundle(android.os.Bundle) -> a
+    void fromBundle(android.os.Bundle) -> b
+    boolean checkArgs() -> b
+com.tencent.mm.sdk.openapi.GetMessageFromWX$Resp -> com.a.a.a.b.d:
+    com.tencent.mm.sdk.openapi.WXMediaMessage message -> b
+    void toBundle(android.os.Bundle) -> a
+    boolean checkArgs() -> a
+com.tencent.mm.sdk.openapi.IWXAPI -> com.a.a.a.b.e:
+    android.content.Context R -> a
+    java.lang.String S -> b
+    boolean T -> c
+    boolean registerApp(java.lang.String) -> a
+    boolean sendReq(com.tencent.mm.sdk.openapi.BaseReq) -> a
+    boolean sendResp(com.tencent.mm.sdk.openapi.BaseResp) -> a
+    boolean a(java.lang.String) -> b
+com.tencent.mm.sdk.openapi.SendMessageToWX$Req -> com.a.a.a.b.f:
+    com.tencent.mm.sdk.openapi.WXMediaMessage message -> b
+    int scene -> c
+    int getType() -> a
+    void fromBundle(android.os.Bundle) -> b
+    void toBundle(android.os.Bundle) -> a
+    boolean checkArgs() -> b
+com.tencent.mm.sdk.openapi.WXAPIFactory -> com.a.a.a.b.g:
+    com.tencent.mm.sdk.openapi.WXAPIFactory Q -> a
+    com.tencent.mm.sdk.openapi.IWXAPI createWXAPI(android.content.Context,java.lang.String) -> a
+    com.tencent.mm.sdk.openapi.IWXAPI createWXAPI(android.content.Context,java.lang.String,boolean) -> a
+com.tencent.mm.sdk.openapi.WXMediaMessage -> com.a.a.a.b.h:
+    int sdkVer -> a
+    java.lang.String title -> b
+    java.lang.String description -> c
+    byte[] thumbData -> d
+    com.tencent.mm.sdk.openapi.WXMediaMessage$IMediaObject mediaObject -> e
+    boolean checkArgs() -> a
+com.tencent.mm.sdk.openapi.WXMediaMessage$IMediaObject -> com.a.a.a.b.i:
+    void serialize(android.os.Bundle) -> a
+    void unserialize(android.os.Bundle) -> b
+    int type() -> a
+    boolean checkArgs() -> b
+com.tencent.mm.sdk.platformtools.Log -> com.a.a.a.c.a:
+    int level -> a
+    byte[] as -> b
+    void e(java.lang.String,java.lang.String) -> a
+    void d(java.lang.String,java.lang.String) -> b
+com.tencent.mm.sdk.platformtools.LogHelper -> com.a.a.a.c.b:
+    byte[] au -> a
+    void writeToStream(java.io.PrintStream,byte[],java.lang.String,java.lang.String) -> a
+com.tencent.mm.sdk.platformtools.Util -> com.a.a.a.c.c:
+    boolean isNullOrNil(java.lang.String) -> a
+    boolean isNullOrNil(byte[]) -> a
+com.xiaosan.HttpData -> com.xiaosan.a:
+    org.apache.http.client.HttpClient nhttHttpClient -> a
+    org.apache.http.client.methods.HttpGet nHttpGet -> b
+    org.apache.http.HttpResponse nHttpResponse -> c
+    org.apache.http.HttpEntity nhttHttpEntity -> d
+    java.io.InputStream in -> e
+    java.lang.String url -> f
+    com.xiaosan.HttpGetDataListener listener -> g
+    java.lang.String doInBackground$4af589aa() -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.xiaosan.HttpGetDataListener -> com.xiaosan.b:
+    void getDataUrl(java.lang.String) -> a
+com.xiaosan.ListData -> com.xiaosan.c:
+    java.lang.String content -> a
+    int flag -> b
+    java.lang.String time -> c
+    int getFlag() -> a
+    java.lang.String getContent() -> b
+    java.lang.String getTime() -> c
+com.xiaosan.MainActivity -> com.xiaosan.MainActivity:
+    android.widget.Button btnShare -> a
+    android.widget.CheckBox isTimelineCb -> b
+    android.widget.EditText et -> c
+    android.widget.Button btn -> d
+    java.util.List lists -> e
+    android.widget.ListView lv -> f
+    java.lang.String str -> g
+    com.xiaosan.TextAdapter adapter -> h
+    java.lang.String[] welcome_array -> i
+    double currentTime -> j
+    double oldTime -> k
+    com.tencent.mm.sdk.openapi.IWXAPI api -> l
+    void onCreate(android.os.Bundle) -> onCreate
+    void regToWx() -> a
+    void onClick(android.view.View) -> onClick
+    void getDataUrl(java.lang.String) -> a
+    java.lang.String getTime() -> b
+    java.lang.String access$0(com.xiaosan.MainActivity,java.lang.String) -> a
+    android.widget.CheckBox access$1(com.xiaosan.MainActivity) -> a
+    com.tencent.mm.sdk.openapi.IWXAPI access$2(com.xiaosan.MainActivity) -> b
+com.xiaosan.MainActivity$1 -> com.xiaosan.d:
+    com.xiaosan.MainActivity this$0 -> a
+    android.widget.EditText val$editor -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.xiaosan.TextAdapter -> com.xiaosan.e:
+    java.util.List lists -> a
+    android.content.Context context -> b
+    android.widget.RelativeLayout Rlayout -> c
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+com.xiaosan.wxapi.WXEntryActivity -> com.xiaosan.wxapi.WXEntryActivity:
+net.sourceforge.simcpux.GetFromWXActivity -> net.sourceforge.simcpux.GetFromWXActivity:
+    com.tencent.mm.sdk.openapi.IWXAPI api -> a
+    android.os.Bundle bundle -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    void onNewIntent(android.content.Intent) -> onNewIntent
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    java.lang.String getTransaction() -> a
+    java.lang.String access$0(net.sourceforge.simcpux.GetFromWXActivity) -> a
+    com.tencent.mm.sdk.openapi.IWXAPI access$1(net.sourceforge.simcpux.GetFromWXActivity) -> b
+net.sourceforge.simcpux.GetFromWXActivity$1 -> net.sourceforge.simcpux.a:
+    net.sourceforge.simcpux.GetFromWXActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+    net.sourceforge.simcpux.GetFromWXActivity access$0(net.sourceforge.simcpux.GetFromWXActivity$1) -> a
+net.sourceforge.simcpux.GetFromWXActivity$1$1 -> net.sourceforge.simcpux.b:
+    net.sourceforge.simcpux.GetFromWXActivity$1 this$1 -> a
+    android.widget.EditText val$editor -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+net.sourceforge.simcpux.ShowFromWXActivity -> net.sourceforge.simcpux.ShowFromWXActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+net.sourceforge.simcpux.uikit.CameraUtil -> net.sourceforge.simcpux.a.a:
+    java.lang.String filePath -> a
+    java.lang.String getResultPhotoPath(android.content.Context,android.content.Intent,java.lang.String) -> a
+    java.lang.String resolvePhotoFromIntent(android.content.Context,android.content.Intent,java.lang.String) -> b

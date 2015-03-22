@@ -1,0 +1,8 @@
+com.xiaosan.MainActivity
+com.xiaosan.MainActivity: MainActivity()
+com.xiaosan.wxapi.WXEntryActivity
+com.xiaosan.wxapi.WXEntryActivity: WXEntryActivity()
+net.sourceforge.simcpux.GetFromWXActivity
+net.sourceforge.simcpux.GetFromWXActivity: GetFromWXActivity()
+net.sourceforge.simcpux.ShowFromWXActivity
+net.sourceforge.simcpux.ShowFromWXActivity: ShowFromWXActivity()

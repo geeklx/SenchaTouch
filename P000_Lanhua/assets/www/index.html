@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<!-- Auto Generated with Sencha Architect -->
+<!-- Modifications to this file will be overwritten. -->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ctone</title>
+    <script>
+        Ext = Ext || {};
+        Ext.theme = {
+            name: "index"
+        };
+    </script>
+    <link rel="stylesheet" href="sencha-touch.css">
+    <link rel="stylesheet" href="tabpanel.css"> 
+    <script src="cordova.js"></script>   
+    <script src="sencha-touch-all.js"></script>
+    <script src="app/override/plugin/ListPaging.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script>
+    	// 注册设备加载事件监听器
+	    document.addEventListener("deviceready", onDeviceReady, false); 
+		function onDeviceReady() {		
+			// 注册回退按钮事件监听器
+			document.addEventListener("backbutton", onBackKeyDown, false); //返回键
+		}  
+		function onConfirm(button) {	    
+			if(button==1) navigator.app.exitApp(); //选择了确定才执行退出
+		}
+		   
+		function onBackKeyDown() {
+			//if(Ext.ComponentQuery.query('#myCard')[0].getActiveItem().id==="p_login" ||Ext.ComponentQuery.query('#myCard')[0].getActiveItem().id==="p_home")
+			if(Ext.ComponentQuery.query('#myCard')[0].getActiveItem().id==="p_login")
+			{
+			    navigator.app.exitApp();
+			}
+			else if(Ext.ComponentQuery.query('#myCard')[0].getActiveItem().id==="p_home")
+			{	
+				navigator.notification.confirm(
+			    	'按确定退出程序!',    // message
+			    	onConfirm,     		 // callback to invoke with index of button pressed
+			    	'确定要退出程序吗?',	 // title
+			    	'确定,取消'          // buttonLabels
+				);		         
+			}
+			else
+			{
+				//navigator.app.backHistory();
+				Ext.ComponentQuery.query('#myCard')[0].setActiveItem(1);	  
+			} 	
+		}
+    </script>
+</head>
+<body></body>
+</html>

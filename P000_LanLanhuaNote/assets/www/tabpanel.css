@@ -1,0 +1,50 @@
+/*
+This file is part of Sencha Touch 2.3
+
+Copyright (c) 2011-2013 Sencha Inc
+
+Contact:  http://www.sencha.com/contact
+
+GNU General Public License Usage
+This file may be used under the terms of the GNU General Public License version 3.0 as
+published by the Free Software Foundation and appearing in the file LICENSE included in the
+packaging of this file.
+
+Please review the following information to ensure the GNU General Public License version 3.0
+requirements will be met: http://www.gnu.org/copyleft/gpl.html.
+
+If you are unsure which license is appropriate for your use, please contact the sales department
+at http://www.sencha.com/contact.
+
+Build date: 2013-11-08 13:58:42 (d989f4377b0a56f9f540fd415741d1f2db1c7977)
+*/
+.navToolbar {
+    padding:25px;
+}
+.navToolbar .x-button {
+    border:0;
+    margin: 0 50px 50px 50px;
+    width:25px;
+    border-right:1px solid #585B5B;
+    border-radius:0;
+    padding:0;
+}
+.navToolbar .x-button .x-button-label {
+    font-weight:normal;
+    color:White;
+    font-size:0.6em;
+}
+.navToolbar .x-tabBar-pressing {
+    padding:25px;
+    background-image:none;
+    background-color:#0f517e;
+    background-image:-webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#0a3351),color-stop(10%,#0c4267),color-stop(65%,#0f517e),color-stop(100%,#0f5280));
+    background-image:-webkit-linear-gradient(top,#0a3351,#0c4267 10%,#0f517e 65%,#0f5280);
+    background-image:-moz-linear-gradient(top,#0a3351,#0c4267 10%,#0f517e 65%,#0f5280);
+    background-image:-o-linear-gradient(top,#0a3351,#0c4267 10%,#0f517e 65%,#0f5280);
+    background-image:linear-gradient(top,#0a3351,#0c4267 10%,#0f517e 65%,#0f5280);
+}
+.TextArea {clear:both;color:#494848; font-size:80%;line-height:28px;padding:5px;}
+.myfieldset{
+    border:0; margin: 0 auto; background-color:#eeeeee;
+}
