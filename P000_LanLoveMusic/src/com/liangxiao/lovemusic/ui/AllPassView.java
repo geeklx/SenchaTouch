@@ -16,5 +16,6 @@ public class AllPassView extends Activity {
 		setContentView(R.layout.all_pass_layout);
 		layout_bar_icon = (FrameLayout) findViewById(R.id.layout_bar_icon);
 		layout_bar_icon.setVisibility(View.INVISIBLE);
+		
 	}
 }

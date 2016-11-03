@@ -22,7 +22,6 @@ public class MainActivity extends DroidGap {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-    	
     	UpdateManager manager = new UpdateManager(MainActivity.this);
  		try {
 			manager.checkUpdate();

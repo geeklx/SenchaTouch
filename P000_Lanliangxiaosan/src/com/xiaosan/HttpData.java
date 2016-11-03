@@ -26,6 +26,7 @@ public class HttpData extends AsyncTask<String, Void, String> {
 	public HttpData(String url, HttpGetDataListener listener) {
 		this.url = url;
 		this.listener = listener;
+		
 	}
 
 	@Override
